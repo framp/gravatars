@@ -1,5 +1,6 @@
 module View exposing (view)
 
+import Http exposing (encodeUri)
 import Html exposing (..)
 import Html.Attributes exposing (class, src, href, target, placeholder)
 import Html.Events exposing (onClick, onInput, onSubmit)
@@ -16,7 +17,7 @@ gravatarUrl =
 makeHashUrl : Bool -> Set Email -> String
 makeHashUrl edit = 
   let prefix = if edit then "#_" else "#$" 
-  in ((++) prefix) << (join ",") << Set.toList
+  in ((++) prefix) << (join ",") << (List.map encodeUri) << Set.toList
 
 view : App -> Html Msg
 view (current, edit, emails) =
