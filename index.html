@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gravatars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    * {
+      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout:none;
+      -webkit-text-size-adjust:none;
+      -webkit-tap-highlight-color:rgba(0,0,0,0);
+      -webkit-user-select:none;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans';
+      background: #111;
+    }
+    .container {
+      height: 100%;
+      width: 90%;
+      margin: auto;
+    }
+    .container > .emails {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .container > .emails > .email {
+      margin: 15px;
+      position: relative;
+      height: 256px;
+      width: 256px;
+    }
+    .container > .emails > .email > img{
+      border-radius: 50%;
+    }
+    .container > .emails > .email > a {
+      position: absolute;
+      cursor: pointer;
+      color: #da4453;
+      background: #434a54;
+      border-radius: 50%;
+      line-height: 20px;
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      padding-left: 1px;
+      top: 0;
+      right: 0; 
+      text-align: center;
+    }
+
+    .container > .add {
+      width: 100%;
+      height: 50px;
+      background: #fff;
+      color: #ddd;
+      display: flex;
+      position: fixed;
+      align-content: center;
+      justify-content: space-between;
+      bottom: 0;
+      left: 0;
+      background: #434A54;
+      line-height: 50px;
+      padding-left: 40px;
+      padding-right: 40px;
+      box-sizing: border-box;
+    }
+    .container > .add input, 
+    .container > .add button,
+    .container > .add a {
+      background: #656D78;
+      border: 0px;
+      -webkit-appearance: none;
+      outline: none;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 10px;
+      padding:0;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #ddd;
+      text-decoration: none;
+    }
+    .container > .add input {
+      width: 200px;
+    }
+    .container > .add input::placeholder {
+      color: #aaa;
+    }
+    .container > .add button {
+      margin-left: 1px;
+    }
+    .container > .add a {
+      border-bottom: 1px solid #ddd;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript" src="./build/gravatars.min.js"></script>
+</body>
+</html>

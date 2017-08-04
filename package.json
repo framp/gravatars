@@ -1,0 +1,10 @@
+{
+  "name": "gravatars",
+  "scripts": {
+    "build": "elm-make ./src/App.elm --output=./build/elm.js && cat build/elm.js src/ports/main.js > build/gravatars.js && rm build/elm.js && uglifyjs build/gravatars.js -o build/gravatars.min.js"
+  },
+  "devDependencies": {
+    "elm": "^0.18.0",
+    "uglify-js": "^2.7.5"
+  }
+}
