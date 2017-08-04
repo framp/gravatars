@@ -48,6 +48,7 @@
     }
     .container > .emails > .email > img{
       border-radius: 50%;
+      animation: fadein 2s;
     }
     .container > .emails > .email > a {
       position: absolute;
@@ -110,6 +111,10 @@
     .container > .add a {
       border-bottom: 1px solid #ddd;
       margin-left: 5px;
+    }
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
     }
   </style>
 </head>
